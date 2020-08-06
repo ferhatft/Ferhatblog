@@ -1,0 +1,73 @@
+{% extends "main.html" %}
+{% load static %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+<!-- Contact Section-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="section-heading text-uppercase  text-center text-uppercase text-secondary">TEMASA GEÇİN</h2>
+        <h3 class="section-subheading text-light  text-center  text-secondary">Herhangi bir öneri ve destek için lütfen iletişime geçin. </h3>
+        <!-- Contact Section Form-->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+
+
+
+                <form method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+                    {% csrf_token %}
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 h-60">
+                        {{form.name}}
+
+
+
+
+                        <p class="help-block text-danger"></p>
+                        {{field.errors}}
+                    </div>
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 h-60">
+                        {{form.phone}}
+
+                        <p class="help-block text-danger"></p>
+                        {{field.errors}}
+                    </div>
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 h-60">
+                        {{form.email}}
+                        <p class="help-block text-danger"></p>
+                        {{field.errors}}
+                    </div>
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 h-60">
+                        {{form.subject}}
+                        <label>Subject</label>
+                        <p class="help-block text-danger"></p>
+                        {{field.errors}}
+                    </div>
+
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+                        {{form.message}}
+                        <p class="help-block text-danger"></p>
+                        {{field.errors}}
+                    </div>
+
+
+                    <br />
+
+                    <div class="d-flex justify-content-center"><button class="btn btn-primary btn-xl"
+                            id="sendMessageButton" type="submit"> Mesajı Gönder</button></div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

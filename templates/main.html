@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Oref Tasarım</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}" />
+
+    <!-- Bootstrap core CSS 
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">-->
+
+
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+
+    <!-- Custom fonts for this template -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efd17d0b75.js" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/business-casual.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">Bİreysel ve Kurumsal özgün Tasarımlar</span>
+        <span class="site-heading-lower">Web tasarım hİzmetlerİ</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Oref Tasarım</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item  px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'index'  %}">Ana Sayfa
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'about'  %}">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'services'  %}">Servİsler</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'store'  %}">BİRİKİMLERİMİZ</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'contact'  %}">İletİşİm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    {% block body %}
+
+    {% endblock body %}
+
+
+</body>
+
+<section class="contact-section bg-black mt-5 pt-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50"><a
+                                href="mailto:tugrul.tf51@gmail.com">tugrul.tf51@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Telefon numarası</h4>
+                        <hr class="my-4" />
+
+                        <div class="small text-black-50"> <a href="https://wa.me/905075734783">+90 507 573 4783</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer class="footer text-faded text-center py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">© Copyright 2020 Ferhat Tuğrul <a href="">Oref tasarım</a> </div>
+            <div class="col-lg-4 my-3 my-lg-0 container">
+
+
+                <a  class="mx-2 icon" href="https://www.facebook.com/tugrul.tf" target="_blank"><i
+                   style="opacity: 0;" class="fab fa-facebook-f fa-2x"></i></a>
+                <a class="mx-2 icon" href="https://www.facebook.com/tugrul.tf" target="_blank"><i
+                        class="fab fa-facebook-f fa-2x"></i></a>
+
+                <a class="mx-2 icon" href="https://wa.me/905075734783" target="_blank"><i
+                        class="fab fa-whatsapp fa-2x"></i></a>
+                <a class="mx-2 icon" href="https://www.instagram.com/ferhat.ft/" target="_blank"><i
+                        class="fab fa-instagram fa-2x"></i></a>
+                <a class="mx-2 icon" href="https://www.facebook.com/tugrul.tf"> <img class="my-icon"
+                        src="/static/img/bionluk.png" alt=""></a>
+
+                <a class="mx-2 icon" href="https://www.facebook.com/tugrul.tf"> <img class="my-icon my-icon-2 "
+                        src="/static/img/ikon.png" alt=""></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="#!">Gizlilik Politikası</a>
+                <a href="#!">Kullanıcı Sözleşmesi</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script>
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+</script>
+
+
+</html>
